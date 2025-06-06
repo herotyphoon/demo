@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Heyyo - Chat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages/chat.css">
+  <link rel="stylesheet" href="css/components/sidebar.css">
+</head>
+
+<body>
+  <div class="bars" onclick="toggleMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <div class="sidebar" id="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="chat.html">Home</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#" onclick="logout()">Log Out</a></li>
+      <li><a href="#" onclick="deleteAccount()">Delete Account</a></li>
+    </ul>
+  </div>
+
+  <div class="chat-container">
+    <div class="contact-list">
+      <h2>Contacts</h2>
+      <div class="contact">
+        <form>
+          <input type="text" placeholder="Enter name....">
+          <button>Search</button>
+        </form>
+      </div>
+      <br>
+      <br>
+      <div class="contact"></div>
+      <div class="contact"></div>
+      <div class="contact"></div>
+      <div class="contact"></div>
+      <div class="contact"></div>
+      <div class="contact"></div>
+      <div class="contact"></div>
+      <div class="contact"></div>
+      <div class="contact"></div>
+      <div class="contact"></div>
+      <div class="contact"></div>
+      <div class="contact"></div>
+      <div class="contact"></div>
+      <div class="contact"></div>
+      <div class="contact"></div>
+    </div>
+    <div class="chat-window">
+      <div class="chat-header"></div>
+      <div class="chat-messages">
+        <div class="message received"></div>
+        <div class="message sent"></div>
+        <div class="message received"></div>
+      </div>
+      <div class="chat-input">
+        <textarea type="text" placeholder="Type your message..."></textarea>
+        <div class="chat-send">
+          <button>Send</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/pages/chat.js"></script>
+  <script src="js/components/sidebar.js"></script>
+  <script src="js/components/logout.js"></script>
+  <script src="js/components/deleteAccount.js"></script>
+</body>
+
+</html>

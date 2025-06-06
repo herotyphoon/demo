@@ -1,0 +1,34 @@
+#chk {
+	display: none;
+}
+
+.signup {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.login {
+	height: 460px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .6s ease-in-out;
+}
+
+.login label {
+	color: #573b8a;
+	transform: scale(.6);
+}
+
+#chk:checked~.login {
+	transform: translateY(-500px);
+}
+
+#chk:checked~.login label {
+	transform: scale(1);
+}
+
+#chk:checked~.signup label {
+	transform: scale(.6);
+}

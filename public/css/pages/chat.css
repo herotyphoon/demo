@@ -1,0 +1,113 @@
+.chat-container {
+	display: flex;
+	width: 90vw;
+	height: 85vh;
+	background: rgba(255, 255, 255, 0.15);
+	backdrop-filter: blur(10px);
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact-list {
+	width: 15%;
+	background: linear-gradient(to bottom, #AA60C8, #7A73D1);
+	color: white;
+	overflow-y: auto;
+	padding: 20px;
+}
+
+.contact {
+	padding: 10px;
+	margin-bottom: 10px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.contact:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.chat-window {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	background: #f9f9f9;
+}
+
+.chat-header {
+	padding: 15px;
+	background: #573b8a;
+	color: white;
+	font-size: 1.5em;
+}
+
+.chat-messages {
+	flex: 1;
+	padding: 20px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: large;
+}
+
+.message {
+	max-width: 60%;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.sent {
+	align-self: flex-end;
+	background: #AA60C8;
+	color: white;
+}
+
+.received {
+	align-self: flex-start;
+	background: #e0dede;
+	color: black;
+}
+
+.chat-input {
+	display: flex;
+	align-items: center;
+	/* vertically center items */
+	padding: 10px;
+	background: #eee;
+	border-top: 1px solid #ccc;
+	gap: 10px;
+}
+
+.chat-input textarea {
+	flex: 1;
+	padding: 15px;
+	width: fit-content;
+	height: 6vh;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	font-size: 1em;
+	resize: none;
+	font-size: large;
+}
+
+.chat-send button {
+	background: #573b8a;
+	color: white;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 6vh;
+	min-width: 150px;
+}
+
+.chat-send button:hover {
+	background: #6d44b8;
+}
